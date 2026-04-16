@@ -1,4 +1,4 @@
-// Ghost Bot - Enterprise Logic
+// Zesther Bot - Enterprise Logic
 
 // --- Command Data ---
 const commands = [
@@ -60,29 +60,29 @@ const commands = [
     { name: "/unmute", desc: "📝 [🔊] Remove o silenciamento de um usuário.", category: "mod", type: "slash" },
 
     // Discord
-    { name: "/ghost-discord", desc: "📝 [👻] Comandos focados em obter informações do servidor.", category: "discord", type: "slash" },
+    { name: "/ZestRealm-discord", desc: "📝 [👻] Comandos focados em obter informações do servidor.", category: "discord", type: "slash" },
 
     // Diversão
-    { name: "/ghost-diversao", desc: "📝 [🎮] Acessa o menu de diversão e minigames.", category: "fun", type: "slash" },
+    { name: "/Zest-diversao", desc: "📝 [🎮] Acessa o menu de diversão e minigames.", category: "fun", type: "slash" },
 
     // Economia
-    { name: "/ghost-economia", desc: "📝 [💰] Menu interativo para acessar todas as funcionalidades financeiras.", category: "eco", type: "slash" },
+    { name: "/Zest-economia", desc: "📝 [💰] Menu interativo para acessar todas as funcionalidades financeiras.", category: "eco", type: "slash" },
 
     // Imagens
-    { name: "/ghost-imagens", desc: "📝 [🖼️] Acessa o menu completo de manipulação de imagens e memes.", category: "img", type: "slash" },
-    { name: "/ghost-removerfundo", desc: "📝 [📕] Remove o fundo de uma imagem.", category: "img", type: "slash" },
+    { name: "/Zest-imagens", desc: "📝 [🖼️] Acessa o menu completo de manipulação de imagens e memes.", category: "img", type: "slash" },
+    { name: "/Zest-removerfundo", desc: "📝 [📕] Remove o fundo de uma imagem.", category: "img", type: "slash" },
 
     // Loja
     { name: "/comprar-gerar-pagamento", desc: "📝 [💰] Gerar um pagamento ou sacar saldo (Admin)", category: "shop", type: "slash" },
     { name: "/gerenciamento-vendasghost", desc: "📝 [📊] Gerencia as vendas da loja", category: "shop", type: "slash" },
     { name: "/comprar-loja", desc: "📝 [🏪] Abre a loja oficial do bot", category: "shop", type: "slash" },
-    { name: "/vip-ghostmod", desc: "📝 [💎] Adquira o VIP Ghost Mod e tenha benefícios exclusivos!", category: "shop", type: "slash" },
+    { name: "/vip-zestmod", desc: "📝 [💎] Adquira o VIP Ghost Mod e tenha benefícios exclusivos!", category: "shop", type: "slash" },
 
     // Minecraft
-    { name: "/ghost-minecraft", desc: "📝 [🧱] Ferramentas e utilitários para Minecraft.", category: "minecraft", type: "slash" },
+    { name: "/zest-minecraft", desc: "📝 [🧱] Ferramentas e utilitários para Minecraft.", category: "minecraft", type: "slash" },
 
     // Social
-    { name: "/ghost-social", desc: "📝 [🤝] Central de interações sociais, perfil, casamento e reputação.", category: "social", type: "slash" },
+    { name: "/zest-social", desc: "📝 [🤝] Central de interações sociais, perfil, casamento e reputação.", category: "social", type: "slash" },
 
     // Usuários
     { name: "/avatar", desc: "📝 [📸] Exibe o avatar de um usuário em alta qualidade.", category: "users", type: "slash" },
