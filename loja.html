@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha | Ghost Moderação</title>
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/script.js" defer=""></script>
+</head>
+
+<body>
+
+    <!-- Navbar (Fixed) -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="images/logo.jpg" alt="Ghost Logo" class="nav-logo">
+            <span class="nav-brand">Ghost Moderação</span>
+        </div>
+        <div class="nav-center">
+            <a href="index.html" class="nav-link">Início</a>
+            <a href="systems.html" class="nav-link">Sistemas</a>
+            <a href="commands.html" class="nav-link">Comandos</a>
+            <a href="loja.html" class="nav-link active">Lojinha</a>
+            <a href="guidelines.html" class="nav-link">Diretrizes</a>
+            <a href="support.html" class="nav-link">Suporte</a>
+        </div>
+        <div class="nav-right">
+            <a href="https://discord.com/oauth2/authorize?client_id=1439278544164487328&permissions=8&integration_type=0&scope=bot" target="_blank" class="btn btn-glow" style="padding: 8px 20px; font-size: 0.9rem;">
+                Adicionar
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" style="min-height: 50vh; padding-top: 150px; padding-bottom: 60px;">
+        <div class="container">
+            <div class="hero-badge">
+                <span></span> Loja Oficial
+            </div>
+            <h1 style="margin-bottom: 24px;">Investimento <span class="text-gradient">Cósmico</span></h1>
+            <p class="hero-desc">
+                Adquira sonhos e desbloqueie o potencial infinito da sua comunidade.
+                Transações seguras via PIX com entrega automática.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+
+                <!-- Pequeno Sonho (1k) - No Bonus -->
+                <div class="card-super-premium rank-1" style="text-align: center;">
+                    <div class="card-icon"><i class="fa-solid fa-cloud-moon"></i></div>
+                    <h3>Pequeno Sonho</h3>
+                    <p class="product-amount">1.000 Sonhos</p>
+                    <div class="product-price">R$ 5,00</div>
+                    <button class="btn btn-secondary" onclick="initiatePurchase(1000, 500)" style="width: 100%;">
+                        Comprar Agora
+                    </button>
+                </div>
+
+                <!-- Sonho Estelar (5k) - 500 Bonus -->
+                <div class="card-super-premium rank-2" style="text-align: center; position: relative; overflow: hidden;">
+                    <div class="badge-best-seller" style="background: var(--accent-gradient);">+ 500 Bônus</div>
+                    <div class="card-icon" style="color: #3b82f6;"><i class="fa-solid fa-meteor"></i></div>
+                    <h3>Sonho Estelar</h3>
+                    <p class="product-amount">5.000 Sonhos</p>
+                    <div class="product-price">R$ 20,00</div>
+                    <button class="btn btn-secondary" onclick="initiatePurchase(5500, 2000)" style="width: 100%;">
+                        Comprar Agora
+                    </button>
+                </div>
+
+                <!-- Sonho Galáctico (10k) - 1.5k Bonus -->
+                <div class="card-super-premium rank-3" style="text-align: center; position: relative; overflow: hidden;">
+                    <div class="badge-best-seller">Mais Vendido</div>
+                    <div class="card-icon" style="color: var(--accent-primary);"><i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3>Sonho Galáctico</h3>
+                    <p class="product-amount">10.000 Sonhos</p>
+                    <div style="color: #22c55e; font-size: 0.9rem; font-weight: 700; margin-bottom: 4px;">+ 1.500
+                        Bônus
+                    </div>
+                    <div class="product-price">R$ 35,00</div>
+                    <button class="btn btn-primary" onclick="initiatePurchase(11500, 3500)" style="width: 100%;">
+                        Comprar Agora
+                    </button>
+                </div>
+
+                <!-- Sonho Universal (20k) - 3.5k Bonus -->
+                <div class="card-super-premium rank-4" style="text-align: center; position: relative; overflow: hidden;">
+                    <div class="badge-best-seller" style="background: var(--accent-gradient);">+ 3.500 Bônus</div>
+                    <div class="card-icon" style="color: #a855f7;"><i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3>Sonho Universal</h3>
+                    <p class="product-amount">20.000 Sonhos</p>
+                    <div class="product-price">R$ 65,00</div>
+                    <button class="btn btn-secondary" onclick="initiatePurchase(23500, 6500)" style="width: 100%;">
+                        Comprar Agora
+                    </button>
+                </div>
+
+                <!-- Sonho Multiverso (35k) - 7k Bonus -->
+                <div class="card-super-premium rank-5" style="text-align: center; position: relative; overflow: hidden;">
+                    <div class="badge-best-seller" style="background: var(--accent-gradient); box-shadow: 0 0 20px #eab308;">+ 7.000 Bônus</div>
+                    <div class="card-icon" style="color: #eab308;"><i class="fa-solid fa-atom"></i>
+                    </div>
+                    <h3>Sonho Multiverso</h3>
+                    <p class="product-amount">35.000 Sonhos</p>
+                    <div class="product-price">R$ 100,00</div>
+                    <button class="btn btn-secondary" onclick="initiatePurchase(42000, 10000)" style="width: 100%;">
+                        Comprar Agora
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2>Perguntas Frequentes</h2>
+            </div>
+
+            <div class="card" style="margin-bottom: 24px;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 8px;"><i class="fa-solid fa-circle-question" style="color: var(--accent-primary); margin-right: 8px;"></i> Por que comprar Sonhos?</h3>
+                <p>Ao comprar Sonhos, você apoia diretamente o desenvolvimento do Ghost, ajudando a pagar servidores e
+                    desenvolvedores, garantindo que o bot continue online e evoluindo.</p>
+            </div>
+
+            <div class="card" style="margin-bottom: 24px;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 8px;"><i class="fa-solid fa-clock" style="color: var(--accent-primary); margin-right: 8px;"></i> Tempo de Entrega?</h3>
+                <p>A entrega é geralmente automática após a confirmação do pagamento via PIX. Caso haja algum atraso,
+                    nossa equipe de suporte está pronta para ajudar via Ticket.</p>
+            </div>
+
+            <div class="card">
+                <h3 style="font-size: 1.2rem; margin-bottom: 8px;"><i class="fa-solid fa-shield-halved" style="color: var(--accent-primary); margin-right: 8px;"></i> É seguro?</h3>
+                <p>Sim! Utilizamos gateways de pagamento oficiais e seguros. Compras de terceiros são estritamente
+                    proibidas e podem resultar em banimento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; align-items: center; justify-content: center; backdrop-filter: blur(5px);">
+        <div class="modal-content" style="background: #0f0f11; padding: 40px; border-radius: 24px; border: 1px solid var(--border-color); width: 90%; max-width: 450px; position: relative; box-shadow: 0 0 50px rgba(0,0,0,0.5);">
+            <span class="close-modal" onclick="closePaymentModal()" style="position: absolute; top: 20px; right: 20px; font-size: 1.5rem; cursor: pointer; color: var(--text-secondary);">�</span>
+
+            <div class="modal-header" style="text-align: center; margin-bottom: 32px;">
+                <h2 style="font-size: 1.8rem; margin-bottom: 8px;"><i class="fa-brands fa-pix" style="color: #32bcad;"></i> Pagamento PIX</h2>
+                <p style="color: var(--text-secondary);">Escaneie o QR Code ou copie o código.</p>
+            </div>
+
+            <div class="modal-body" style="text-align: center;">
+                <div class="qr-container" style="background: white; padding: 16px; border-radius: 12px; display: inline-block; margin-bottom: 24px;">
+                    <img id="pix-qr-code" src="" alt="QR Code PIX" style="width: 200px; height: 200px; display: none;">
+                    <div class="loading-spinner" id="qr-loading" style="width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; color: #333;">
+                        <i class="fa-solid fa-circle-notch fa-spin fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="copy-paste-container">
+                    <div class="input-group" style="display: flex; gap: 8px;">
+                        <input type="text" id="pix-copypaste" readonly="" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: rgba(255,255,255,0.05); color: white; outline: none;">
+                        <button onclick="copyPixCode()" class="btn-icon" style="padding: 0 16px; border-radius: 8px; border: 1px solid var(--accent-primary); background: rgba(255,0,0,0.1); color: var(--accent-primary); cursor: pointer;"><i class="fa-solid fa-copy"></i></button>
+                    </div>
+                </div>
+
+                <div class="modal-instructions" style="margin-top: 24px; text-align: left; font-size: 0.9rem; color: var(--text-secondary); background: rgba(255,255,255,0.02); padding: 16px; border-radius: 8px;">
+                    <p style="margin-bottom: 8px;">1. Abra o app do seu banco.</p>
+                    <p style="margin-bottom: 8px;">2. Escolha pagar via PIX > Ler QR Code ou Copia e Cola.</p>
+                    <p>3. Após pagar, <strong>abra um ticket no Discord</strong> para resgatar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand" style="max-width: 300px;">
+                    <h4><img src="images/logo.jpg" style="height: 30px; border-radius: 50%;"> Ghost Studio</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Construindo o futuro das comunidades no
+                        Discord com tecnologia de ponta e design inigualável.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h5>Produto</h5>
+                    <ul>
+                        <li><a href="commands.html">Comandos</a></li>
+                        <li><a href="systems.html">Sistemas</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h5>Suporte</h5>
+                    <ul>
+                        <li><a href="support.html">Central de Ajuda</a></li>
+                        <li><a href="guidelines.html">Diretrizes</a></li>
+                        <li><a href="https://discord.gg/w982KFEUps">Comunidade</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid var(--border-color); padding-top: 32px; display: flex; justify-content: space-between; color: var(--text-tertiary); font-size: 0.9rem;">
+                <p>� 2024 Ghost Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget Container -->
+    <div class="chatbox-widget" id="chatbox-widget"></div>
+
+    <script src="js/script.js"></script>
+
+
+</body></html>
